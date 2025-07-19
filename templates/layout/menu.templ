@@ -1,0 +1,16 @@
+package layout
+
+type Link struct {
+	Text string
+	URL  string
+}
+
+templ Menu(links []Link) {
+	<nav>
+		<ul>
+			for _, link := range links {
+				<li><a href={ templ.SafeURL(link.URL) }>{ link.Text }</a></li>
+			}
+		</ul>
+	</nav>
+}

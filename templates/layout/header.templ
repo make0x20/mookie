@@ -1,0 +1,11 @@
+package layout
+
+templ Header(links []Link) {
+	<header>
+		<div class="brand">
+			<img src="/static/logo.png" alt="mookie" height="50" width="50"/>
+			<a href="/">Mookie</a>
+		</div>
+		@Menu(links)
+	</header>
+}

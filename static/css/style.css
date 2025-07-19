@@ -1,0 +1,176 @@
+:root {
+	/* Colors */
+	--bg-primary: #121212;
+	--bg-secondary: #1e1e1e;
+	--text-primary: #e0e0e0;
+	--text-secondary: #a0a0a0;
+	--accent: #9bfafc;
+	--error: #cf6679;
+	--success: #03dac6;
+	--border: #333333;
+
+	/* Typography */
+	--font-family: "Raleway", sans-serif;
+	--line-height: 1.5;
+
+	/* Spacing */
+	--spacing: 1rem;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Base styles */
+html {
+	font-size: 16px;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	font-family: var(--font-family);
+	line-height: var(--line-height);
+}
+
+body {
+	max-width: 80ch;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1rem;
+	color: var(--text-primary);
+	line-height: 1.2;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+/* Links */
+a,
+a:visited {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Lists */
+ul,
+ol {
+	margin-bottom: 1.5rem;
+	padding-left: 2rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+	background-color: var(--bg-secondary);
+	color: var(--text-primary);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	padding: 0.5rem;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+button {
+	background-color: var(--accent);
+	color: var(--bg-primary);
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+/* Tables */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1.5rem;
+}
+
+th,
+td {
+	padding: 0.75rem;
+	border: 1px solid var(--border);
+	text-align: left;
+}
+
+th {
+	background-color: var(--bg-secondary);
+}
+
+/* Code */
+pre,
+code {
+	background-color: var(--bg-secondary);
+	padding: 0.2rem 0.4rem;
+	border-radius: 4px;
+	font-family: monospace;
+}
+
+pre {
+	padding: 1rem;
+	overflow-x: auto;
+	margin-bottom: 1.5rem;
+}
+
+pre code {
+	padding: 0;
+	background-color: transparent;
+}
+
+/* Quotes */
+blockquote {
+	border-left: 4px solid var(--accent);
+	padding-left: 1rem;
+	margin: 1.5rem 0;
+	color: var(--text-secondary);
+}
+
+/* Horizontal rule */
+hr {
+	border: none;
+	border-top: 1px solid var(--border);
+	margin: 2rem 0;
+}
+
+header,
+main,
+footer {
+	padding: var(--spacing);
+}
+
+header {
+	background-color: var(--bg-secondary);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
+
+	ul {
+		margin: 0;
+	}
+}

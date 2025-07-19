@@ -1,0 +1,25 @@
+package layout
+
+templ HTML(title string) {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
+			<link rel="icon" href="/static/favicon.png" type="image/png"/>
+			<title>{ title }</title>
+			<!-- Placeholder css below -->
+			<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
+			<link rel="stylesheet" href="static/css/style.css"/>
+		</head>
+		<body>
+			@Header([]Link{
+				{Text: "Home", URL: "/"},
+				{Text: "About", URL: "/about"},
+			})
+			<main>
+				{ children... }
+			</main>
+			@Footer()
+		</body>
+	</html>
+}

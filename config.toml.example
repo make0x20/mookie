@@ -1,0 +1,5 @@
+BindAddress = '0.0.0.0'
+Port = 8080
+DatabasePath = 'app.db'
+LogFile = ''
+LogLevel = 'normal'
